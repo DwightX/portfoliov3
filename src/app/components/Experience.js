@@ -33,9 +33,11 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI/GREENMAN-PEDERSON, INC.</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Build map-based applications using GIS tools, such as ESRI ArcGIS frameworks and APIs.</li>
-                                <li>Create technical documentation and user manuals.</li>
-                                <li> Developed Web Services(REST) APIs for querying traffic data from PostgreSQL database</li>
+                                <li>Designed map-based applications using GIS tools like ESRI ArcGIS frameworks and API.</li>
+                                <li>Developed BIM projects using Revit for improved visualization and modeling.</li>
+                                <li>Created  technical proposals and user manuals for software applications.</li>
+                                <li>Created new site features, tools, apps, email templates, landing pages, and web forms to meet evolving user needs.</li>
+                                <li>Built multiple region-based applications, including a collection management system, using ESRI tools to serve users.</li>
                             </ul>
                             </div>
                              </div>
@@ -49,9 +51,9 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://zanibonilighting.com/">ZANIBONI LIGHTING</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Effectively collaborate with Product, UX, and Marketing teams.</li>
-                                <li>Some Full Stack development within Magento 2 to implement new site features, customizations.</li>
-                                <li>Develop and maintain website content across all business group websites including all web page types on both Ecommerce and non-Ecommerce websites.</li>
+                                <li>Assist with full migration of Magento 1.9 portal to Magento 2.3 CE, resulting in 35% improved platform performance.</li>
+                                <li>Managed landing pages, marketing emails, and visual campaigns to support marketing initiatives.</li>
+                                <li>Collaborated in the complete Scrum development lifecycle, contributing to product development and delivery.</li>
                             </ul>
                             </div>
                              </div>
@@ -65,9 +67,9 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://thewaveclearwater.com/">THE WAVE</a></h3>
                             <div className="jobBlurb px-2">
                                 <ul>
-                                    <li>Manage & support website built within WordPress, including content/image updates, plugin maintenance and updates, etc.</li>
-                                    <li>Implement front-end components with Vue.js framework.</li>
-                                    <li>Build landing pages to support targeted advertising, email and SMS/MMS campaigns.</li>
+                                    <li>Built responsive frontend for a SaaS platform using Vue.js and Vue Router, collaborating with UX/UI designers.</li>
+                                    <li>Developed and maintained RESTful APIs with Loopback, connecting frontend to a Node.js and MongoDB backend.</li>
+                                    <li>Designed scalable backend systems and optimized database performance for high-traffic applications.</li>
                                 </ul>
                             </div>
                              </div>
@@ -81,6 +83,7 @@ const Experience = props => {
                             <h3> <a className="hover-underline-animation jobCompany" href="https://www.h2itsolutions.com/">H2 IT SOLUTIONS</a></h3> 
                             <div className="jobBlurb px-2">
                                 <ul>
+                                    <li>Successfully migrated 50+ online courses from Blackboard to Canvas LMS</li>
                                     <li>Develop, update, and maintain the monthly safety training eLearning modules.</li>
                                     <li>Create web user experiences using HTML, CSS, and JavaScript.</li>
                                     <li>Convert existing documentation and training materials into engaging and effective online courses.</li>
