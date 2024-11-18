@@ -33,11 +33,11 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI/GREENMAN-PEDERSON, INC.</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Designed map-based applications using GIS tools like ESRI ArcGIS frameworks and API.</li>
-                                <li>Developed BIM projects using Revit for improved visualization and modeling.</li>
-                                <li>Created  technical proposals and user manuals for software applications.</li>
+                                <li>Architected and developed JavaScript-based map applications using ESRI ArcGIS frameworks.</li>
+                                <li>Assisted with BIM projects using Revit for improved visualization and modeling.</li>
+                                <li>Established standardized documentation processes, creating comprehensive technical proposals and user manuals</li>
                                 <li>Created new site features, tools, apps, email templates, landing pages, and web forms to meet evolving user needs.</li>
-                                <li>Built multiple region-based applications, including a collection management system, using ESRI tools to serve users.</li>
+                                <li>Developed RESTful APIs to integrate mapping services with client applications.</li>
                             </ul>
                             </div>
                              </div>
