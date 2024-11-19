@@ -44,7 +44,7 @@ const Experience = props => {
                         </div>
                         <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                             <div className="w-full md:w-2/4">
-                                <h2 className='jobTitle'>FRONT END WEB DEVELOPER</h2>
+                                <h2 className='jobTitle'>FRONT-END WEB DEVELOPER</h2>
                                 <p className="jobYear">June 2019 - Feb 2022</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
@@ -60,7 +60,7 @@ const Experience = props => {
                         </div>
                         <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                         <div className="w-full md:w-2/4">
-                                <h2 className='jobTitle'>FRONT END WEB DEVELOPER</h2>
+                                <h2 className='jobTitle'>FRONT-END WEB DEVELOPER</h2>
                                 <p className="jobYear">October 2018 - June 2019</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
