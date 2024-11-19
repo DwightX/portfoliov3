@@ -27,7 +27,7 @@ const Experience = props => {
                     <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                             <div className="w-full md:w-2/4">
                                 <h2 className='jobTitle'>APPLICATION DEVELOPER</h2>
-                                <p className="jobYear">June 2022 - Oct 2024</p>
+                                <p className="jobYear">Fev 2022 - Oct 2024</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
                             <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI/GREENMAN-PEDERSON, INC.</a></h3>
@@ -45,7 +45,7 @@ const Experience = props => {
                         <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                             <div className="w-full md:w-2/4">
                                 <h2 className='jobTitle'>FRONT END WEB DEVELOPER</h2>
-                                <p className="jobYear">June 2019 - Oct 2024</p>
+                                <p className="jobYear">June 2019 - Feb 2022</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
                             <h3><a className="jobCompany hover-underline-animation" href="https://zanibonilighting.com/">ZANIBONI LIGHTING</a></h3>
