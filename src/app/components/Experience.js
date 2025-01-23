@@ -27,25 +27,25 @@ const Experience = props => {
                     <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                             <div className="w-full md:w-2/4">
                                 <h2 className='jobTitle'>APPLICATION DEVELOPER</h2>
-                                <p className="jobYear">June 2022 - Oct 2024</p>
+                                <p className="jobYear">Fev 2022 - Oct 2024</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
                             <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI/GREENMAN-PEDERSON, INC.</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Designed map-based applications using GIS tools like ESRI ArcGIS frameworks and API.</li>
-                                <li>Developed BIM projects using Revit for improved visualization and modeling.</li>
-                                <li>Created  technical proposals and user manuals for software applications.</li>
+                                <li>Architected and developed JavaScript-based map applications using ESRI ArcGIS frameworks.</li>
+                                <li>Assisted with BIM projects using Revit for improved visualization and modeling.</li>
+                                <li>Established standardized documentation processes, creating comprehensive technical proposals and user manuals</li>
                                 <li>Created new site features, tools, apps, email templates, landing pages, and web forms to meet evolving user needs.</li>
-                                <li>Built multiple region-based applications, including a collection management system, using ESRI tools to serve users.</li>
+                                <li>Developed RESTful APIs to integrate mapping services with client applications.</li>
                             </ul>
                             </div>
                              </div>
                         </div>
                         <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                             <div className="w-full md:w-2/4">
-                                <h2 className='jobTitle'>FRONT END WEB DEVELOPER</h2>
-                                <p className="jobYear">June 2019 - Oct 2024</p>
+                                <h2 className='jobTitle'>FRONT-END WEB DEVELOPER</h2>
+                                <p className="jobYear">June 2019 - Feb 2022</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
                             <h3><a className="jobCompany hover-underline-animation" href="https://zanibonilighting.com/">ZANIBONI LIGHTING</a></h3>
@@ -60,7 +60,7 @@ const Experience = props => {
                         </div>
                         <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                         <div className="w-full md:w-2/4">
-                                <h2 className='jobTitle'>FRONT END WEB DEVELOPER</h2>
+                                <h2 className='jobTitle'>FRONT-END WEB DEVELOPER</h2>
                                 <p className="jobYear">October 2018 - June 2019</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
