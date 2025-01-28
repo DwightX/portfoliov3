@@ -1,18 +1,23 @@
 
 
 const Maincontent = (props) => {
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <div id="about__block" className="container mx-auto max-w-screen-2xl">
+    <div id="home_block" className="container mx-auto max-w-screen-2xl">
       <div className="section-Main">
-        <div className=" flex flex-col md:p-24 lg:p-40">
-          <div className="specialName">
-            <h1>Hello, friend ?</h1>
-          </div>
+        <div className=" flex flex-col md:p-24 lg:p-20">
           <div className="mainName">
             <h1 className="">DWIGHT CARTER</h1>
           </div>
           <div className="specialTitle">
-            <h1 className=" ">WEB DEVELOPER</h1>
+            <h1 className=" ">DEVELOPER</h1>
           </div>
           <div className="mainBlurb">
             <p className="text-lg">

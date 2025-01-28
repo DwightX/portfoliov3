@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Experience = props => {
 
     return (
-        <div id="exp__block" className="blockColor py-4 px-4 "> 
+        <div id="exp__block" className="blockColor md:p-24 lg:p-20"> 
         <div className="container mx-auto max-w-screen-2xl">
             <div className="section-Experience items-center">
                 <div className='flex flex-wrap'>
@@ -18,9 +18,6 @@ const Experience = props => {
                             <div className="specialBlurb">
                                 <p>From working overnight in a call center to being a self taught developer</p>
                             </div>
-                        </div>
-                        <div className="w-2/4">
-                        <Image className="mx-auto"src={logo} alt='This is me' />
                         </div>
                     </div>
                     <div className="flex flex-wrap gap-4">

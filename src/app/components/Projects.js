@@ -1,14 +1,9 @@
 import React from "react";
 
 
-
-
-
-
 const Projects = (props) => {
   return (
-    <div id="project__block" className="container mx-auto pt-24 max-w-screen-2xl py-4 px-4">
-      {/* <div className="backGround"></div> */}
+    <div id="project_block" className="container mx-auto pt-24 max-w-screen-2xl md:p-24 lg:p-20">
       <div className="section-Projects items-center">
         <div className="flex flex-wrap">
           <div className="pb-8">

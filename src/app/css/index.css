@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+  scroll-behavior: smooth;
   min-height: calc(100% + env(safe-area-inset-top));
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -13,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #001029;
+  background-color: #000000;
   margin: 0px;
 }
 .bgColor{
@@ -23,7 +24,7 @@ body {
   color:#f8c0d2 !important;
 }
 .thirdColorBG{
-  background-color:#E3B23C !important;
+  background-color:#FA2D48 !important;
 }
 
 h1 {
@@ -78,7 +79,7 @@ code {
   font-size: 13px;
 }
 .linksHead:hover{
-  color: #E3B23C !important;
+  color: #FA2D48 !important;
 }
 .linksMain:hover {
   color: #001b29 !important;
@@ -187,21 +188,21 @@ li {
 }
 
 .specialName h1{
-  color: #E3B23C;
+  color: #FA2D48;
   font-weight: 400;
   margin-top: 10px;
   font-family: monospace;
   font-size: 15px;
 }
 .specialTitle h1{
-  color: #001029;
+  color: #FA2D48;
   font-weight: 900;
   opacity: 1;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   -webkit-text-strokeWidth: 2px;
-      -webkit-text-stroke-color: #E3B23C;
+      -webkit-text-stroke-color: #FA2D48;
       font-size: clamp(35px, 8vw, 55px);
 }
 .mainName h1{
@@ -215,7 +216,7 @@ li {
   margin-top: 10px;
 }
 .specialBlurb p {
-  color: #E3B23C;
+  color: #FA2D48;
   margin-top: 5px;
   font-weight: 600;
   font-family: monospace;
@@ -225,7 +226,7 @@ li {
   text-decoration: none !important;
   font-weight: bold;
   color: #fdfffc !important;
-  border: 1px solid #E3B23C;
+  border: 1px solid #FA2D48;
   padding: 5px;
 }
 .sectionTitles h1{
@@ -251,7 +252,7 @@ li {
 }
 .jobYear{
   font-size: clamp(15px, 0.5vw, 30px);
-  background: #E3B23C;
+  background: #FA2D48;
   color: #112240;
   width: 300px;
   display: block;
@@ -261,7 +262,7 @@ li {
 }
 .footerText{
   font-family: monospace;
-  color: #E3B23C;
+  color: #FA2D48;
   text-align: center;
   padding: 10px 10px 10px 10px;
   font-size: 12px;
@@ -269,25 +270,39 @@ li {
 .media__stack-icon {
   height: 1.25rem;
   margin-right: 0.25rem;;
-  fill: #E3B23C;
+  fill: #FA2D48;
 }
 .laguageText{
   line-height: 1;
   font-family: monospace;
 }
+
 path:hover {
-  color: #E3B23C;
+  color: #FA2D48;
   -moz-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
 }
+ol{
+  font-size: small!important;
+}
 li{
   display: list-item;
+  font-family: monospace;
+  font-size: normal;
+  color: #EBF5FF;
+}
+li:hover {
+  color: #FA2D48;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #E3B23C; /* Change the color */
+  color: #FA2D48; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -306,7 +321,7 @@ ul li::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #E3B23C;
+  background-color: #FA2D48;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -319,7 +334,7 @@ svg.m-4 {
   fill: white;
 }
 svg.m-4:hover {
-  fill: #E3B23C;
+  fill: #FA2D48;
   transition: all 0.3s ease;
 }
 .home__CTA {
@@ -356,7 +371,7 @@ a {
   vertical-align: -0.125em;
 }
 .dxFdrJ {
-  border: 2px solid #E3B23C;
+  border: 2px solid #FA2D48;
   color: rgb(248, 248, 248);
   cursor: pointer;
   transition: all 0.2s ease 0s;
@@ -374,7 +389,7 @@ transition: all 0.3s ease;
 .home__text a.cta {
   display: block;
   margin: 30px 0px;
-  color: #E3B23C;
+  color: #FA2D48;
 }
 .MuiLink-root{
   margin: 3px !important;
@@ -382,4 +397,11 @@ transition: all 0.3s ease;
 .MuiToolbar-regular{
   padding-left: 0px !important;
   padding-right:  0px !important;
+}
+
+
+.header{
+      position: sticky;
+    top: 0px;
+    z-index: 1;
 }
