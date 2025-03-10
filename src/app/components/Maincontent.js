@@ -27,7 +27,7 @@ const Maincontent = (props) => {
             </p>
           </div>
             <div className="home__CTA home__text">
-              <a className="Button-sc-19s561s-0 dxFdrJ cta" href="https://docs.google.com/document/d/1i6ktrb8iiH-6tiGLRiBayXrLW5_puAK5kys8m6b8sUI/edit?usp=sharing">
+              <a className="Button-sc-19s561s-0 dxFdrJ cta" href="https://docs.google.com/document/d/e/2PACX-1vS92Q6PrVRuqH-9J6uqBaKpo-sxG8wdZdG1OdwzdBMcVOOBKfWWEaFUmqpa2Tqs61NhYTJPPrvxdDf6/pub">
                 View Resume
               </a>
               <div className="home__social">
