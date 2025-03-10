@@ -16,7 +16,7 @@ const Projects = (props) => {
           <div className="py-4 px-4 textBlurbs jobBlob">
               <div className="flex items-center justify-between">
               <a className="jobCompany hover-underline-animation" href="https://dc-vinyl-collection.netlify.app/">
-                <h2 className="jobTitle hover-underline-animation">Vinyl Colelction</h2>
+                <h2 className="jobTitle hover-underline-animation">Vinyl Collection</h2>
                 </a> 
                 <div className="flex items-center justify-between">
                 <a href="https://github.com/DwightX/vinyl-collection" alt="Source Code">
