@@ -1,5 +1,5 @@
 
-import resume from "../../../public/Dwight_Carter_Resume.pdf";
+import Link from "next/link";
 const Maincontent = (props) => {
 
   const handleScroll = (id) => {
@@ -27,9 +27,9 @@ const Maincontent = (props) => {
             </p>
           </div>
             <div className="home__CTA home__text">
-              <a className="Button-sc-19s561s-0 dxFdrJ cta" href={resume}>
+              <Link className="Button-sc-19s561s-0 dxFdrJ cta" href='/Dwight_Carter_Resume.pdf'>
                 View Resume
-              </a>
+              </Link>
               <div className="home__social">
                 <a
                   target="__blank"
