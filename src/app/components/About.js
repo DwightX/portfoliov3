@@ -14,7 +14,7 @@ const About = (props) => {
                     About
                 </h1>
                 <div className="specialBlurb">
-                    <p>Hey! I'm Dwight Carter, a self-taught developer whose coding journey began with customizing MySpace layouts. That early curiosity about HTML and CSS sparked a passion that led me from tinkering with social media profiles to building full-scale web applications. Since then, I've worked on everything from e-commerce platforms at Zaniboni Lighting to developing sophisticated mapping applications at GPI. Currently, I focus on building intuitive web solutions that help people better understand and interact with data in meaningful ways.</p>
+                    <p>I’m a Software Engineer with over 6 years of experience building scalable, user-focused web applications using React, Vue.js, and modern JavaScript. I work across the full stack with Node.js, MongoDB, and PHP, integrating RESTful APIs and geospatial tools to turn complex requirements into real-world solutions. From improving performance to streamlining workflows, I enjoy building reliable, intuitive tools that teams genuinely enjoy using.</p>
                 </div>
             </div>
             <div className="w-2/4">

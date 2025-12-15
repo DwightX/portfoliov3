@@ -24,17 +24,16 @@ const Experience = props => {
                     <div className='py-4 px-4 textBlurbs md:flex md:flex-wrap w-full'>
                             <div className="w-full md:w-2/4">
                                 <h2 className='jobTitle'>SOFTWARE ENGINEER</h2>
-                                <p className="jobYear">February 2022 - October 2024</p>
+                                <p className="jobYear">February 2022 - Janurary 2025</p>
                             </div>
                             <div className="w-full md:w-2/4 mt-4">
                             <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI/GREENMAN-PEDERSON, INC.</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Architected and developed JavaScript-based map applications using ESRI ArcGIS frameworks.</li>
-                                <li>Assisted with BIM projects using Revit for improved visualization and modeling.</li>
-                                <li>Established standardized documentation processes, creating comprehensive technical proposals and user manuals</li>
-                                <li>Created new site features, tools, apps, email templates, landing pages, and web forms to meet evolving user needs.</li>
-                                <li>Developed RESTful APIs to integrate mapping services with client applications.</li>
+                                <li>Developed cross-platform mapping applications using JavaScript, React, and ESRI ArcGIS, delivering geospatial visualization tools used by 100+ internal and client users.</li>
+                                <li>Integrated RESTful APIs to connect mapping services with client applications, reducing database query time by 20% and improving data processing efficiency.</li>
+                                <li>EContributed to Building Information Modeling (BIM) workflows using Revit, enhancing design accuracy and visualization quality.</li>
+                                <li>Created and maintained technical documentation that reduced onboarding time and improved long-term maintainability.</li>
                             </ul>
                             </div>
                              </div>
@@ -48,9 +47,10 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://zanibonilighting.com/">ZANIBONI LIGHTING</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Assist with full migration of Magento 1.9 portal to Magento 2.3 CE, resulting in 35% improved platform performance.</li>
-                                <li>Managed landing pages, marketing emails, and visual campaigns to support marketing initiatives.</li>
-                                <li>Collaborated in the complete Scrum development lifecycle, contributing to product development and delivery.</li>
+                                <li>Collaborated on the migration from Magento 1.9 to Magento 2.3 CE, resulting in a 35% improvement in platform performance.</li>
+                                <li>Integrated Mailchimp APIs to automate marketing email campaigns, improving user engagement and campaign efficiency.</li>
+                                <li>Designed and developed high-conversion landing pages and visual campaigns in collaboration with marketing teams.</li>
+                                <li>Built product catalog integrations between the e-commerce frontend and PHP/Laravel backend.</li>
                             </ul>
                             </div>
                              </div>
@@ -64,9 +64,9 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://thewaveclearwater.com/">THE WAVE</a></h3>
                             <div className="jobBlurb px-2">
                                 <ul>
-                                    <li>Built responsive frontend for a SaaS platform using Vue.js and Vue Router, collaborating with UX/UI designers.</li>
-                                    <li>Developed and maintained RESTful APIs with Loopback, connecting frontend to a Node.js and MongoDB backend.</li>
-                                    <li>Designed scalable backend systems and optimized database performance for high-traffic applications.</li>
+                                    <li>Developed responsive SaaS frontends using Vue.js & Vue Router in collaboration with UX/UI designers.</li>
+                                    <li>Built RESTful APIs using the LoopBack framework, connecting Node.js and MongoDB backend services.</li>
+                                    <li>Implemented responsive landing pages from design mockups and maintained multiple WordPress sites.</li>
                                 </ul>
                             </div>
                              </div>
@@ -80,10 +80,9 @@ const Experience = props => {
                             <h3> <a className="hover-underline-animation jobCompany" href="https://www.h2itsolutions.com/">H2 IT SOLUTIONS</a></h3> 
                             <div className="jobBlurb px-2">
                                 <ul>
-                                    <li>Successfully migrated 50+ online courses from Blackboard to Canvas LMS</li>
-                                    <li>Develop, update, and maintain the monthly safety training eLearning modules.</li>
-                                    <li>Create web user experiences using HTML, CSS, and JavaScript.</li>
-                                    <li>Convert existing documentation and training materials into engaging and effective online courses.</li>
+                                    <li>Successfully migrated 50+ online courses from Blackboard to Canvas LMS, ensuring data integrity and user experience continuity.</li>
+                                    <li>Developed responsive course content using HTML5 and CSS3, improving mobile accessibility.</li>
+                                    <li>Streamlined migration processes and contributed to platform optimization initiatives.</li>
                                 </ul>
                             </div>
                              </div>

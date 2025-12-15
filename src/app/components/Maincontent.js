@@ -27,7 +27,7 @@ const Maincontent = (props) => {
             </p>
           </div>
             <div className="home__CTA home__text">
-              <Link className="Button-sc-19s561s-0 dxFdrJ cta" href='/Dwight_Carter_Resume.pdf'>
+              <Link className="Button-sc-19s561s-0 dxFdrJ cta" href='https://docs.google.com/document/d/1EJDkjazKm8vY320NKWRVvMSpNkLIXhoJgWr2lgONy7Q/edit?usp=sharing' target="_blank" rel="noopener noreferrer">
                 View Resume
               </Link>
               <div className="home__social">
