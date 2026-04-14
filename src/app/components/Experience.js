@@ -15,9 +15,6 @@ const Experience = props => {
                             <h1 className="pb-2">
                                EXPERIENCE
                             </h1>
-                            <div className="specialBlurb">
-                                <p>From working overnight in a call center to being a self taught developer</p>
-                            </div>
                         </div>
                     </div>
                     <div className="flex flex-wrap gap-4">
@@ -30,9 +27,9 @@ const Experience = props => {
                             <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI/GREENMAN-PEDERSON, INC.</a></h3>
                             <div className="jobBlurb px-2">
                             <ul>
-                                <li>Developed cross-platform mapping applications using JavaScript, React, and ESRI ArcGIS, delivering geospatial visualization tools used by 100+ internal and client users.</li>
-                                <li>Integrated RESTful APIs to connect mapping services with client applications, reducing database query time by 20% and improving data processing efficiency.</li>
-                                <li>EContributed to Building Information Modeling (BIM) workflows using Revit, enhancing design accuracy and visualization quality.</li>
+                                <li>Developed and maintained cross-platform web applications using JavaScript, React, and modern web technologies, delivering tools used by 100+ internal and client users including government agencies.</li>
+                                <li>Provided ongoing troubleshooting, maintenance, and support for production web applications, ensuring reliability and security.</li>
+                                <li>Integrated RESTful APIs to connect frontend applications with backend services, reducing database query time by 20% and improving system performance.</li>
                                 <li>Created and maintained technical documentation that reduced onboarding time and improved long-term maintainability.</li>
                             </ul>
                             </div>
@@ -48,8 +45,8 @@ const Experience = props => {
                             <div className="jobBlurb px-2">
                             <ul>
                                 <li>Collaborated on the migration from Magento 1.9 to Magento 2.3 CE, resulting in a 35% improvement in platform performance.</li>
-                                <li>Integrated Mailchimp APIs to automate marketing email campaigns, improving user engagement and campaign efficiency.</li>
-                                <li>Designed and developed high-conversion landing pages and visual campaigns in collaboration with marketing teams.</li>
+                                <li>Integrated third-party APIs (Mailchimp) to enhance website functionality and automate user engagement workflows.</li>
+                                <li>Designed and developed landing pages and visual campaigns, implementing consistent branding elements including logos, color palettes, and typography across all web properties.</li>
                                 <li>Built product catalog integrations between the e-commerce frontend and PHP/Laravel backend.</li>
                             </ul>
                             </div>
@@ -67,6 +64,7 @@ const Experience = props => {
                                     <li>Developed responsive SaaS frontends using Vue.js & Vue Router in collaboration with UX/UI designers.</li>
                                     <li>Built RESTful APIs using the LoopBack framework, connecting Node.js and MongoDB backend services.</li>
                                     <li>Implemented responsive landing pages from design mockups and maintained multiple WordPress sites.</li>
+                                    <li>Designed and implemented responsive landing pages from design mockups, translating visual concepts into functional, branded web pages.</li>
                                 </ul>
                             </div>
                              </div>

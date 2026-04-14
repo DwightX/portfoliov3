@@ -246,7 +246,7 @@ li {
 }
 .jobBlurb{
   /* font-size: clamp(15px, 1vw, 30px); */
-    color: #718096;
+    color: #94a3b8;
     line-height: 1.75rem;
     font-weight: 500;
 }
@@ -404,4 +404,114 @@ transition: all 0.3s ease;
       position: sticky;
     top: 0px;
     z-index: 1;
+}
+
+/* ========== Theme Toggle Button ========== */
+.theme-toggle {
+  background: none;
+  border: 1px solid #FA2D48;
+  border-radius: 6px;
+  padding: 6px 8px;
+  cursor: pointer;
+  color: #EBF5FF;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.theme-toggle:hover {
+  background-color: rgba(250, 45, 72, 0.1);
+}
+
+/* ========== Light Mode Overrides ========== */
+html.light body {
+  background-color: #f0f4f8;
+}
+html.light .mainName h1 {
+  color: #0a192f;
+}
+html.light .specialTitle h1 {
+  color: #FA2D48;
+}
+html.light .mainBlurb p {
+  color: #0a192f;
+}
+html.light .textColor {
+  color: #0a192f !important;
+}
+html.light .sectionTitles h1 {
+  color: #0a192f;
+}
+html.light .jobTitle {
+  color: #0a192f;
+}
+html.light .jobCompany {
+  color: #0a192f;
+}
+html.light .pageTitles {
+  color: #0a192f;
+}
+html.light .jobBlurb {
+  color: #374151;
+}
+html.light .linksHead {
+  color: #0a192f !important;
+}
+html.light .linksHead:hover {
+  color: #FA2D48 !important;
+}
+html.light li {
+  color: #0a192f;
+}
+html.light a {
+  color: #0a192f;
+}
+html.light .linksMain {
+  color: #0a192f !important;
+}
+html.light svg.m-4 {
+  fill: #0a192f;
+}
+html.light .home__social {
+  color: #0a192f;
+}
+html.light .home__social a svg {
+  color: #0a192f;
+}
+html.light .animate-bounce svg {
+  stroke: #0a192f;
+}
+html.light .theme-toggle {
+  color: #0a192f;
+}
+html.light .dxFdrJ {
+  color: #0a192f;
+}
+html.light .headOne {
+  color: #0a192f;
+}
+html.light .contentBox {
+  color: #0a192f;
+}
+html.light .footerText {
+  color: #FA2D48;
+}
+html.light .textBlurbs {
+  box-shadow: none;
+}
+
+/* ========== Mouse Glow ========== */
+.mouse-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(250, 45, 72, 0.25) 0%, rgba(250, 45, 72, 0.07) 40%, transparent 70%);
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+}
+html.light .mouse-glow {
+  background: radial-gradient(circle, rgba(250, 45, 72, 0.18) 0%, rgba(250, 45, 72, 0.05) 40%, transparent 65%);
 }

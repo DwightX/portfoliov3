@@ -5,10 +5,12 @@ import Projects from './components/Projects';
 import Bottom from "./components/Bottom";
 import Header from "./components/Header";
 import About from './components/About';
+import MouseGlow from './components/MouseGlow';
 
 export default function Home() {
   return (
     <div>
+      <MouseGlow />
       <Header />
       <Maincontent />
       <About />
@@ -16,6 +18,5 @@ export default function Home() {
       <Projects />
       <Bottom />
     </div>
-
   );
 }
