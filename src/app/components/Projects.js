@@ -45,10 +45,12 @@ const Projects = (props) => {
 
             <div className="py-4 px-4 textBlurbs jobBlob">
               <div className="flex items-center justify-between">
-                <a className="jobCompany hover-underline-animation" href="https://gh-profiler.herokuapp.com/">
+                <a className="jobCompany hover-underline-animation" href="https://github.com/DwightX/github-tracker">
                   <h2 className="jobTitle hover-underline-animation">Github Profile Finder</h2>
                 </a>
-                <GithubIcon />
+                <a href="https://github.com/DwightX/github-tracker" alt="Source Code">
+                  <GithubIcon />
+                </a>
               </div>
               <p>You are able to search for GitHub profiles and view details.</p>
               <div className="flex">
