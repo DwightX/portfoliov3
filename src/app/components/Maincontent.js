@@ -12,7 +12,7 @@ const Maincontent = (props) => {
   return (
     <div id="home_block" className="container mx-auto max-w-screen-2xl">
       <div className="section-Main">
-        <div className=" flex flex-col md:p-24 lg:p-20">
+        <div className="flex flex-col px-6 py-16 md:p-24 lg:p-20">
           <div className="mainName">
             <h1 className="">DWIGHT CARTER</h1>
           </div>

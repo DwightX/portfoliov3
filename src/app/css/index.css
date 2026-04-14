@@ -500,6 +500,11 @@ html.light .textBlurbs {
 }
 
 /* ========== Mouse Glow ========== */
+@media (max-width: 767px) {
+  .mouse-glow {
+    display: none;
+  }
+}
 .mouse-glow {
   position: fixed;
   top: 0;

@@ -17,8 +17,8 @@ const Header = () => {
       <div className="pl-4">
         <h1 className="text-white text-3xl"></h1>
       </div>
-      <div className="pr-4 flex items-center gap-4">
-        <ol className="flex space-x-4 text-white text-lg">
+      <div className="pr-4 flex items-center gap-2 md:gap-4">
+        <ol className="flex space-x-2 md:space-x-4 text-white text-sm md:text-lg">
           <a href="#home_block">
             <li className="hover:underline cursor-pointer">Home</li>
           </a>

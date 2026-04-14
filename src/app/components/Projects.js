@@ -14,7 +14,7 @@ const StackIcon = () => (
 
 const Projects = (props) => {
   return (
-    <div id="project_block" className="container mx-auto pt-24 max-w-screen-2xl md:p-24 lg:p-20">
+    <div id="project_block" className="container mx-auto max-w-screen-2xl px-6 py-16 md:p-24 lg:p-20">
       <div className="section-Projects items-center">
         <div className="flex flex-wrap">
           <div className="pb-8">
