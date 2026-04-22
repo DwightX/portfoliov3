@@ -11,6 +11,21 @@ const Experience = props => {
                 <div className="exp-list">
 
                     <div className="exp-entry">
+                        <p className="jobYear">January 2025 — Present</p>
+                        <h2 className="jobTitle">Freelance Developer</h2>
+                        <h3><span className="jobCompany">Independent</span></h3>
+                        <div className="jobBlurb mt-3">
+                            <ul>
+                                <li>Designed and developed websites for small businesses and entrepreneurs, handling full project lifecycle from discovery through deployment.</li>
+                                <li>Built personal branding websites including custom color palettes, typography systems, and visual identity, translating client vision into cohesive digital presence.</li>
+                                <li>Developed an internal client lead-tracking application using MongoDB and Vanilla JS, enabling clients to manage prospects, notes, and follow-ups in a centralized tool.</li>
+                                <li>Maintained and extended client Shopify storefronts, implementing theme customizations, product integrations, and performance improvements.</li>
+                                <li>Managed ongoing WordPress site maintenance including plugin updates, content changes, performance tuning, and security hardening.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="exp-entry">
                         <p className="jobYear">February 2022 — January 2025</p>
                         <h2 className="jobTitle">Software Engineer</h2>
                         <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI / Greenman-Pedersen, Inc.</a></h3>
