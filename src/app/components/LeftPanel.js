@@ -40,9 +40,9 @@ export default function LeftPanel() {
         <div className="left-panel-name">DWIGHT CARTER</div>
         <div className="left-panel-title">Software Engineer</div>
         <p className="left-panel-blurb">
-          6+ years building scalable, responsive web applications using React,
-          Vue.js, and modern JavaScript. Full-stack with Node.js, MongoDB, PHP,
-          and geospatial mapping tools.
+          6+ years building web applications across the full stack. JavaScript
+          engineer with experience in ecommerce, geospatial tooling, internal
+          applications, and security automation.
         </p>
 
         {/* Nav */}

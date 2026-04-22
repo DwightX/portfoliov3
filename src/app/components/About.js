@@ -8,12 +8,22 @@ const About = (props) => {
           </div>
           <div className="about-body">
             <p>
-              I&apos;m a Software Engineer with over 6 years of experience building scalable,
-              user-focused web applications using React, Vue.js, and modern JavaScript.
-              I work across the full stack with Node.js, MongoDB, and PHP, integrating
-              RESTful APIs and geospatial tools to turn complex requirements into
-              real-world solutions. From improving performance to streamlining workflows,
-              I enjoy building reliable, intuitive tools that teams genuinely enjoy using.
+              I&apos;m a Software Engineer with 6+ years of experience building production web
+              applications across the full stack. JavaScript is my core language, and I&apos;ve used it
+              to deliver tools that real teams depend on daily, from ecommerce platforms and internal
+              business applications to geospatial data dashboards and systems used by government
+              agencies. I work across the stack with Node.js, MongoDB, PHP, React, and Vue.js, and
+              I&apos;m most effective when I can take ownership of a feature or product from scoping
+              through deployment.
+            </p>
+            <p>
+              My background spans agencies, product companies, and freelance work, which means I&apos;ve
+              had to be adaptable, communicate across disciplines, and get things shipped without a
+              lot of hand-holding. I&apos;ve led platform migrations, built internal tooling from scratch,
+              integrated third party APIs, and maintained production systems with real uptime
+              expectations. More recently I&apos;ve been focused on application security, building
+              automated pipelines for vulnerability scanning, dependency auditing, and dynamic
+              testing as part of the development workflow rather than a step after the fact.
             </p>
           </div>
         </div>

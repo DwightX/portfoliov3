@@ -234,9 +234,12 @@ li {
 }
 .about-body p {
   color: #94a3b8;
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  font-weight: 400;
+  font-family: monospace;
   max-width: 600px;
+  margin-bottom: 1rem;
 }
 html.light .about-body p {
   color: #374151;
