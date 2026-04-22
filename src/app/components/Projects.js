@@ -37,19 +37,26 @@ const Projects = (props) => {
         </div>
         <div className="exp-list">
 
+          <Project
+            title="Vulnerable Task Manager: DevSecOps Demo"
+            href="https://github.com/DwightX/secure-task-manager"
+            githubHref="https://github.com/DwightX/secure-task-manager"
+            description="A purposely insecure Node.js task management app built to demonstrate security testing, secure coding practices, and CI/CD security automation. Integrates SAST with Semgrep, dependency scanning with Trivy, and DAST with OWASP ZAP, all automated via GitHub Actions workflows."
+            stack="Node.js · Express · SQLite · Semgrep · Trivy · OWASP ZAP · Jest · GitHub Actions"
+          />
 
           <Project
-            title="Leadership In Training — Website"
+            title="Leadership In Training Website"
             href="https://leadershipintraining.com/"
-            description="Official website for Matt Njoku and the LIT Program, a leadership development course for first-time managers and new business owners."
-            stack="React · Vite · Tailwind ·Netlify"
+            description="Built the public facing website for the LIT Program, a leadership development course for first-time managers and new business owners."
+            stack="React · Vite · Tailwind · Netlify"
           />
 
           <Project
             title="Vinyl Collection"
             href="https://dc-vinyl-collection.netlify.app/"
             githubHref="https://github.com/DwightX/vinyl-collection"
-            description="Using the Discogs API I built a website to display my vinyl collection."
+            description="A personal catalog app that connects to the Discogs API to pull and display my vinyl record collection. Features dynamic data fetching, responsive card layouts, and live filtering so users can browse by artist, genre, and release year."
             stack="React · Next.js · Netlify"
           />
 
@@ -57,7 +64,7 @@ const Projects = (props) => {
             title="Github Profile Finder"
             href="https://github.com/DwightX/github-tracker"
             githubHref="https://github.com/DwightX/github-tracker"
-            description="Search for GitHub profiles and view details."
+            description="A search tool that queries the GitHub API to pull public profile data, repositories, follower counts, and activity for any user. Built to practice working with third party REST APIs, async data handling, and dynamic UI rendering in React."
             stack="React · Heroku"
           />
 
@@ -65,7 +72,7 @@ const Projects = (props) => {
             title="Netflix Clone"
             href="https://objective-carson-eba100.netlify.app/"
             githubHref="https://github.com/DwightX/movie-tracker"
-            description="Responsive Netflix clone built for React practice."
+            description="A responsive front end recreation of the Netflix browsing experience. Pulls live movie and TV data from the TMDB API, organized into genre based rows with hover previews and a styled detail view, focusing on component architecture and API integration."
             stack="React · Netlify"
           />
 
@@ -73,7 +80,7 @@ const Projects = (props) => {
             title="Mock JSON API"
             href="https://github.com/DwightX/json-server"
             githubHref="https://github.com/DwightX/json-server"
-            description="A mock REST API JSON server used for fake data in a project."
+            description="A lightweight local REST API built with json-server to simulate a backend during frontend development. Supports full CRUD operations and was used to decouple frontend work from backend availability, speeding up iteration on client projects."
             stack="JavaScript"
           />
 
@@ -81,7 +88,7 @@ const Projects = (props) => {
             title="Random Facts"
             href="https://github.com/DwightX/node-server"
             githubHref="https://github.com/DwightX/node-server"
-            description="A node server that displays random facts using Vanilla JS, Express, and Node.js."
+            description="A simple Node.js and Express server that serves randomly selected facts on each request. Built to explore server-side rendering, route handling, and serving dynamic content without a frontend framework."
             stack="JavaScript · Node.js · Express"
           />
 

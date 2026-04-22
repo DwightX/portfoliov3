@@ -18,7 +18,7 @@ const Experience = props => {
                             <ul>
                                 <li>Designed and developed websites for small businesses and entrepreneurs, handling full project lifecycle from discovery through deployment.</li>
                                 <li>Built personal branding websites including custom color palettes, typography systems, and visual identity, translating client vision into cohesive digital presence.</li>
-                                <li>Developed an internal client lead-tracking application using MongoDB and Vanilla JS, enabling clients to manage prospects, notes, and follow-ups in a centralized tool.</li>
+                                <li>Developed an internal client lead tracking application using MongoDB and Vanilla JS, enabling clients to manage prospects, notes, and follow ups in a centralized tool.</li>
                                 <li>Maintained and extended client Shopify storefronts, implementing theme customizations, product integrations, and performance improvements.</li>
                                 <li>Managed ongoing WordPress site maintenance including plugin updates, content changes, performance tuning, and security hardening.</li>
                             </ul>
@@ -31,31 +31,31 @@ const Experience = props => {
                         <h3><a className="jobCompany hover-underline-animation" href="https://www.gpinet.com/">GPI / Greenman-Pedersen, Inc.</a></h3>
                         <div className="jobBlurb mt-3">
                             <ul>
-                                <li>Developed and maintained cross-platform web applications using JavaScript, React, and modern web technologies, delivering tools used by 100+ internal and client users including government agencies.</li>
+                                <li>Developed and maintained cross platform web applications using JavaScript, React, and modern web technologies, delivering tools used by 100+ internal and client users including government agencies.</li>
                                 <li>Provided ongoing troubleshooting, maintenance, and support for production web applications, ensuring reliability and security.</li>
                                 <li>Integrated RESTful APIs to connect frontend applications with backend services, reducing database query time by 20% and improving system performance.</li>
-                                <li>Created and maintained technical documentation that reduced onboarding time and improved long-term maintainability.</li>
+                                <li>Created and maintained technical documentation that reduced onboarding time and improved long term maintainability.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="exp-entry">
                         <p className="jobYear">June 2019 — February 2022</p>
-                        <h2 className="jobTitle">Front-End Software Engineer</h2>
+                        <h2 className="jobTitle">Front End Software Engineer</h2>
                         <h3><a className="jobCompany hover-underline-animation" href="https://zanibonilighting.com/">Zaniboni Lighting</a></h3>
                         <div className="jobBlurb mt-3">
                             <ul>
                                 <li>Collaborated on the migration from Magento 1.9 to Magento 2.3 CE, resulting in a 35% improvement in platform performance.</li>
-                                <li>Integrated third-party APIs (Mailchimp) to enhance website functionality and automate user engagement workflows.</li>
+                                <li>Integrated third party APIs (Mailchimp) to enhance website functionality and automate user engagement workflows.</li>
                                 <li>Designed and developed landing pages and visual campaigns, implementing consistent branding elements including logos, color palettes, and typography across all web properties.</li>
-                                <li>Built product catalog integrations between the e-commerce frontend and PHP/Laravel backend.</li>
+                                <li>Built product catalog integrations between the ecommerce frontend and PHP/Laravel backend.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="exp-entry">
                         <p className="jobYear">October 2018 — June 2019</p>
-                        <h2 className="jobTitle">Jr. Front-End Software Engineer</h2>
+                        <h2 className="jobTitle">Jr. Front End Software Engineer</h2>
                         <h3><a className="jobCompany hover-underline-animation" href="https://thewaveclearwater.com/">The Wave of Clearwater</a></h3>
                         <div className="jobBlurb mt-3">
                             <ul>
