@@ -38,6 +38,14 @@ const Projects = (props) => {
         <div className="exp-list">
 
           <Project
+            title="Blue Brother Burger"
+            href="https://github.com/DwightX/blue-brother-burger"
+            githubHref="https://github.com/DwightX/blue-brother-burger"
+            description="A full stack ecommerce application built for a real pop-up burger operation. Customers can configure and order items with live inventory that stays in sync across browser tabs via WebSocket. Includes Stripe checkout with automatic receipts and a password protected admin dashboard for managing inventory and orders."
+            stack="Next.js · TypeScript · Tailwind · Supabase · PostgreSQL · Stripe"
+          />
+
+          <Project
             title="Vulnerable Task Manager: DevSecOps Demo"
             href="https://github.com/DwightX/secure-task-manager"
             githubHref="https://github.com/DwightX/secure-task-manager"
