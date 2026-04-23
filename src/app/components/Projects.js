@@ -38,7 +38,7 @@ const Projects = (props) => {
         <div className="exp-list">
 
           <Project
-            title="Blue Brother Burger"
+            title="Blue Brother Burger."
             href="https://github.com/DwightX/blue-brother-burger"
             githubHref="https://github.com/DwightX/blue-brother-burger"
             description="A full stack ecommerce application built for a real pop-up burger operation. Customers can configure and order items with live inventory that stays in sync across browser tabs via WebSocket. Includes Stripe checkout with automatic receipts and a password protected admin dashboard for managing inventory and orders."
