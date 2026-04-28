@@ -17,13 +17,9 @@ const About = (props) => {
               through deployment.
             </p>
             <p>
-              My background spans agencies, product companies, and freelance work, which means I&apos;ve
-              had to be adaptable, communicate across disciplines, and get things shipped without a
-              lot of hand-holding. I&apos;ve led platform migrations, built internal tooling from scratch,
-              integrated third party APIs, and maintained production systems with real uptime
-              expectations. More recently I&apos;ve been focused on application security, building
-              automated pipelines for vulnerability scanning, dependency auditing, and dynamic
-              testing as part of the development workflow rather than a step after the fact.
+              My background spans agencies, product companies, and freelance work.Most recently I&apos;ve been focused on learning application security, 
+              and learning about the future of AI and how to use it as a tool to become a better developer.
+
             </p>
           </div>
         </div>
