@@ -17,7 +17,7 @@ const About = (props) => {
               through deployment.
             </p>
             <p>
-              My background spans agencies, product companies, and freelance work.Most recently I&apos;ve been focused on learning application security, 
+              My background spans agencies, product companies, and freelance work. Most recently I&apos;ve been focused on learning application security, 
               and learning about the future of AI and how to use it as a tool to become a better developer.
 
             </p>
