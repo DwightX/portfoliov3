@@ -62,7 +62,7 @@ export default function LeftPanel() {
       {/* Bottom: resume, social, theme */}
       <div className="left-panel-bottom">
         <Link
-          href="https://docs.google.com/document/d/1EJDkjazKm8vY320NKWRVvMSpNkLIXhoJgWr2lgONy7Q/edit?usp=sharing"
+          href="/Dwight-Carter-jr-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="left-panel-resume"
