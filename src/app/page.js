@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import About from './components/About';
 import MouseGlow from './components/MouseGlow';
 import LeftPanel from './components/LeftPanel';
+import ChatWidget from './components/ChatWidget';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Projects />
         <Bottom />
       </div>
+      <ChatWidget />
     </div>
   );
 }
