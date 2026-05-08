@@ -6,7 +6,8 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const MAX_MESSAGES = 10;
-const MAX_MESSAGE_CHARS = 500;
+const MAX_USER_CHARS = 500;
+const MAX_ASSISTANT_CHARS = 4000;
 const MAX_OUTPUT_TOKENS = 500;
 const MODEL = "llama-3.3-70b-versatile";
 
@@ -78,7 +79,8 @@ function validateMessages(messages) {
     if (m.role !== "user" && m.role !== "assistant") return "invalid role";
     if (typeof m.content !== "string") return "content must be a string";
     if (m.content.length === 0) return "content cannot be empty";
-    if (m.content.length > MAX_MESSAGE_CHARS) return `content exceeds ${MAX_MESSAGE_CHARS} chars`;
+    const limit = m.role === "user" ? MAX_USER_CHARS : MAX_ASSISTANT_CHARS;
+    if (m.content.length > limit) return `${m.role} content exceeds ${limit} chars`;
   }
   if (messages[messages.length - 1].role !== "user") return "last message must be from user";
   return null;

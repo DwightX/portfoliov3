@@ -939,6 +939,40 @@ html.light .cw-msg-assistant {
   font-size: 12px;
 }
 
+.cw-status {
+  align-self: flex-start;
+  font-size: 11px;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 4px 0;
+  letter-spacing: 0.02em;
+}
+
+.cw-cursor {
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  margin-left: 2px;
+  background: #FA2D48;
+  vertical-align: middle;
+  animation: cw-blink 1s steps(2) infinite;
+}
+@keyframes cw-blink {
+  to { opacity: 0; }
+}
+
+.cw-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: cw-spin 0.7s linear infinite;
+}
+@keyframes cw-spin {
+  to { transform: rotate(360deg); }
+}
+
 .cw-footer {
   display: flex;
   align-items: flex-end;

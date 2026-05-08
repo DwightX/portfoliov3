@@ -31,6 +31,7 @@ export default function useTurnstile({ enabled = false } = {}) {
   const widgetIdRef = useRef(null);
   const tokenRef = useRef(null);
   const resolveRef = useRef(null);
+  const executingRef = useRef(false);
   const [ready, setReady] = useState(false);
   const [error, setError] = useState(null);
 
@@ -45,8 +46,10 @@ export default function useTurnstile({ enabled = false } = {}) {
         if (cancelled || !containerRef.current) return;
         widgetIdRef.current = turnstile.render(containerRef.current, {
           sitekey: siteKey,
-          size: "invisible",
+          appearance: "interaction-only",
+          execution: "execute",
           callback: (token) => {
+            executingRef.current = false;
             tokenRef.current = token;
             if (resolveRef.current) {
               resolveRef.current(token);
@@ -54,6 +57,7 @@ export default function useTurnstile({ enabled = false } = {}) {
             }
           },
           "error-callback": () => {
+            executingRef.current = false;
             tokenRef.current = null;
             if (resolveRef.current) {
               resolveRef.current(null);
@@ -70,6 +74,7 @@ export default function useTurnstile({ enabled = false } = {}) {
 
     return () => {
       cancelled = true;
+      executingRef.current = false;
       if (widgetIdRef.current && window.turnstile) {
         try {
           window.turnstile.remove(widgetIdRef.current);
@@ -79,25 +84,46 @@ export default function useTurnstile({ enabled = false } = {}) {
     };
   }, [enabled, siteKey]);
 
-  const getToken = useCallback(async () => {
+  const getToken = useCallback(async ({ prefetch = false } = {}) => {
     if (!siteKey) return null;
     if (!ready || !window.turnstile || !widgetIdRef.current) return null;
+
+    if (tokenRef.current && !prefetch) {
+      const t = tokenRef.current;
+      tokenRef.current = null;
+      return t;
+    }
+
+    if (executingRef.current) {
+      return new Promise((resolve) => {
+        resolveRef.current = resolve;
+        setTimeout(() => {
+          if (resolveRef.current === resolve) {
+            resolveRef.current = null;
+            resolve(tokenRef.current || null);
+          }
+        }, 15000);
+      });
+    }
 
     try {
       window.turnstile.reset(widgetIdRef.current);
     } catch {}
     tokenRef.current = null;
+    executingRef.current = true;
 
     return new Promise((resolve) => {
       resolveRef.current = resolve;
       try {
         window.turnstile.execute(widgetIdRef.current);
       } catch {
+        executingRef.current = false;
         resolveRef.current = null;
         resolve(null);
       }
       setTimeout(() => {
         if (resolveRef.current === resolve) {
+          executingRef.current = false;
           resolveRef.current = null;
           resolve(null);
         }

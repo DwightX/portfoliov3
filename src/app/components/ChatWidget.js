@@ -10,26 +10,37 @@ export default function ChatWidget() {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
-  const [streaming, setStreaming] = useState(false);
+  const [phase, setPhase] = useState("idle"); // idle | verifying | thinking | streaming
   const [errorBanner, setErrorBanner] = useState(null);
 
   const listRef = useRef(null);
   const inputRef = useRef(null);
+  const prefetchedRef = useRef(false);
 
-  const { containerRef: turnstileRef, getToken, configured: turnstileConfigured } =
+  const { containerRef: turnstileRef, ready: turnstileReady, getToken, configured: turnstileConfigured } =
     useTurnstile({ enabled: open });
+
+  const streaming = phase === "thinking" || phase === "streaming";
 
   useEffect(() => {
     if (listRef.current) {
       listRef.current.scrollTop = listRef.current.scrollHeight;
     }
-  }, [messages, streaming]);
+  }, [messages, phase]);
 
   useEffect(() => {
     if (open && inputRef.current) {
       inputRef.current.focus();
     }
   }, [open]);
+
+  // Prefetch a Turnstile token in the background once the widget is ready,
+  // so by the time the user hits "send" the bot challenge is already done.
+  useEffect(() => {
+    if (!open || !turnstileReady || !turnstileConfigured || prefetchedRef.current) return;
+    prefetchedRef.current = true;
+    getToken({ prefetch: true }).catch(() => {});
+  }, [open, turnstileReady, turnstileConfigured, getToken]);
 
   const sendMessage = useCallback(async () => {
     const text = input.trim();
@@ -41,21 +52,23 @@ export default function ChatWidget() {
     const history = [...messages, userMsg].slice(-MAX_HISTORY);
     setMessages(history);
     setInput("");
-    setStreaming(true);
-    setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
+    setPhase(turnstileConfigured ? "verifying" : "thinking");
 
     let token = null;
     if (turnstileConfigured) {
       token = await getToken();
+      prefetchedRef.current = false;
       if (!token) {
-        setStreaming(false);
-        setMessages((prev) => prev.slice(0, -1));
+        setPhase("idle");
         setErrorBanner("Bot verification failed. Please try again.");
         return;
       }
     } else {
       token = "dev-no-turnstile";
     }
+
+    setPhase("thinking");
+    setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
 
     try {
       const res = await fetch("/api/chat", {
@@ -70,7 +83,7 @@ export default function ChatWidget() {
           const data = await res.json();
           if (data && data.message) msg = data.message;
         } catch {}
-        setStreaming(false);
+        setPhase("idle");
         setMessages((prev) => prev.slice(0, -1));
         setErrorBanner(msg);
         return;
@@ -79,6 +92,7 @@ export default function ChatWidget() {
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
+      let gotFirstToken = false;
 
       while (true) {
         const { done, value } = await reader.read();
@@ -95,6 +109,10 @@ export default function ChatWidget() {
           try {
             const parsed = JSON.parse(payload);
             if (parsed.delta) {
+              if (!gotFirstToken) {
+                gotFirstToken = true;
+                setPhase("streaming");
+              }
               setMessages((prev) => {
                 const next = [...prev];
                 const last = next[next.length - 1];
@@ -113,7 +131,7 @@ export default function ChatWidget() {
       setMessages((prev) => prev.slice(0, -1));
       setErrorBanner("Network error. Please try again.");
     } finally {
-      setStreaming(false);
+      setPhase("idle");
     }
   }, [input, messages, streaming, getToken, turnstileConfigured]);
 
@@ -165,13 +183,26 @@ export default function ChatWidget() {
                 <p>Ask me about his experience, projects, or skills.</p>
               </div>
             )}
-            {messages.map((m, i) => (
-              <div key={i} className={`cw-msg cw-msg-${m.role}`}>
-                {m.content || (m.role === "assistant" && streaming && i === messages.length - 1 ? (
-                  <span className="cw-typing"><span /><span /><span /></span>
-                ) : null)}
-              </div>
-            ))}
+            {messages.map((m, i) => {
+              const isLast = i === messages.length - 1;
+              const isStreamingThis = isLast && m.role === "assistant" && streaming;
+              return (
+                <div key={i} className={`cw-msg cw-msg-${m.role}`}>
+                  {m.content}
+                  {isStreamingThis && !m.content && (
+                    <span className="cw-typing" aria-label="Assistant is thinking">
+                      <span /><span /><span />
+                    </span>
+                  )}
+                  {isStreamingThis && m.content && (
+                    <span className="cw-cursor" aria-hidden="true" />
+                  )}
+                </div>
+              );
+            })}
+            {phase === "verifying" && (
+              <div className="cw-status">Verifying you&apos;re human…</div>
+            )}
             {errorBanner && <div className="cw-error">{errorBanner}</div>}
           </div>
 
@@ -184,20 +215,24 @@ export default function ChatWidget() {
               placeholder="Ask about Dwight's experience..."
               rows={1}
               maxLength={MAX_INPUT}
-              disabled={streaming}
+              disabled={streaming || phase === "verifying"}
               aria-label="Type your message"
               className="cw-input"
             />
             <button
               onClick={sendMessage}
-              disabled={!input.trim() || streaming}
+              disabled={!input.trim() || streaming || phase === "verifying"}
               aria-label="Send message"
               className="cw-send"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="22" y1="2" x2="11" y2="13" />
-                <polygon points="22 2 15 22 11 13 2 9 22 2" />
-              </svg>
+              {phase === "verifying" || phase === "thinking" ? (
+                <span className="cw-spinner" aria-hidden="true" />
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              )}
             </button>
           </div>
           <div className="cw-disclaimer">
