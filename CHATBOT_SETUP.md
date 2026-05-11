@@ -19,7 +19,7 @@ Edit `src/app/data/resume.md` with the detailed resume you want the bot to answe
 ```bash
 cp .env.local.example .env.local
 # fill in all five vars
-npm run dev
+npm run dev 
 ```
 
 Open http://localhost:3000 and click "Chat with my AI friend" bottom-right.
