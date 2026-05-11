@@ -85,6 +85,13 @@ A short but focused engagement migrating online educational content between LMS 
 
 ## Projects
 
+### Resume AI Chatbot
+An AI assistant built directly into this portfolio site that lets recruiters and visitors ask questions about Dwight's background, experience, and skills and get instant answers grounded in his resume. Replies stream in real time, token by token, so the experience feels like a live conversation rather than a long wait followed by a wall of text.
+
+The interesting engineering work was on the production side rather than the AI itself: the public-facing endpoint had to stay reliable and cost-controlled without a login. That meant layering in bot verification on the form, tiered usage limits (burst, hourly, daily, and a global ceiling) backed by Redis, origin checks on the API route, and prompt-injection guardrails in the system prompt so the bot stays on-topic and won't be talked into ignoring its instructions. The model runs on Groq for low-latency inference, with the resume itself as the single source of truth.
+
+**Tech used:** Next.js, Groq (Llama 3.3 70B), Server-Sent Events for streaming, Upstash Redis for rate limiting, Cloudflare Turnstile for bot protection.
+
 ### Blue Brother Burger
 A full-stack e-commerce application built to support a real pop-up burger operation (not a tutorial project — actual customers, actual orders). Customers can configure and order menu items with live inventory that stays synchronized across browser tabs via WebSocket connections, so two people ordering the last available item at the same time get an honest answer instead of a double-sell.
 
