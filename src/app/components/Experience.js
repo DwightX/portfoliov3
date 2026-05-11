@@ -36,6 +36,7 @@ const Experience = props => {
                                 <li>Integrated live traffic camera feeds into mapping applications, allowing clients to monitor real time road conditions alongside spatial data layers.</li>
                                 <li>Created onboarding documentation and walked clients through new deployments alongside IT teams.</li>
                                 <li>Designed responsive client websites that pulled in client provided spatial data to display live road closures, branded for each client and optimized for mobile.</li>
+                                <li>Helped deploy and maintain client-facing web applications on AWS, working with EC2 for the app tier and S3 with CloudFront for static assets and CDN delivery.</li>
                             </ul>
                         </div>
                     </div>

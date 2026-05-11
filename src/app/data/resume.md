@@ -43,8 +43,9 @@ GPI is a national civil engineering and consulting firm. Dwight worked on the ap
 - Integrated live traffic camera feeds into mapping applications, allowing clients to monitor real-time road conditions alongside spatial data layers.
 - Created onboarding documentation and walked clients through new deployments alongside IT teams. Client-facing communication was a regular part of the role, not an afterthought.
 - Designed responsive client websites that pulled in client-provided spatial data to display live road closures, branded for each client and optimized for mobile — these were often the public-facing front door for a county or municipality during a weather event.
+- Helped deploy and maintain client-facing web applications on **AWS**, working with **EC2** for the application tier and **S3 + CloudFront** for static asset hosting and CDN delivery. Day-to-day this meant pushing new builds, troubleshooting deploys, managing environment configuration across staging and production, and coordinating with the team on rollouts for the public-facing dashboards.
 
-**Tech used:** JavaScript (ES6+), TypeScript, Leaflet, Mapbox, ESRI ArcGIS, jQuery (in legacy dashboards), Node.js, Redis, REST APIs.
+**Tech used:** JavaScript (ES6+), TypeScript, Leaflet, Mapbox, ESRI ArcGIS, jQuery (in legacy dashboards), Node.js, Redis, REST APIs, AWS (EC2, S3, CloudFront).
 
 ### Front End Developer — Zaniboni Lighting
 *June 2019 — February 2022*
@@ -132,7 +133,7 @@ A custom-built personal-brand website built for a client using React, Vite, and 
 - **WordPress** — full lifecycle: hosting and DNS setup, theme installation and child-theme customization in PHP/HTML/CSS, page-building with Elementor and the block editor, plugin selection and configuration (Yoast, security, caching, forms), WooCommerce for e-commerce needs, and ongoing maintenance including updates, backups, security hardening, and performance tuning.
 - **Magento** — both 1.x (legacy) and 2.x, including a full replatforming migration at Zaniboni Lighting.
 
-**Tools & Platforms:** Git, GitHub, GitHub Actions, Webpack, Vite, CI/CD pipelines, MongoDB, Redis, Netlify, Vercel.
+**Tools & Platforms:** Git, GitHub, GitHub Actions, Webpack, Vite, CI/CD pipelines, MongoDB, Redis, Netlify, Vercel, **AWS** (EC2, S3, CloudFront — used at GPI to deploy and maintain client-facing web applications).
 
 **Other:** REST API design and consumption, WebSockets, responsive design, A/B testing, Mailchimp, performance optimization, security-aware development practices.
 
