@@ -38,6 +38,14 @@ const Projects = (props) => {
         <div className="exp-list">
 
           <Project
+            title="Resume AI Chatbot"
+            href="https://github.com/DwightX/portfoliov3"
+            githubHref="https://github.com/DwightX/portfoliov3"
+            description="An AI assistant built into this portfolio that lets recruiters and visitors ask questions about my background, experience, and skills and get instant answers pulled directly from my resume. Replies stream in real time like a live conversation, and the system is protected against spam and abuse with bot verification and usage limits, so it stays reliable and cost-controlled in production."
+            stack="Next.js · AI (Groq / Llama 3) · Real-time Streaming · Redis · Bot Protection"
+          />
+
+          <Project
             title="Blue Brother Burger."
             href="https://blue-brother-burger.netlify.app/"
             githubHref="https://github.com/DwightX/blue-brother-burger"
