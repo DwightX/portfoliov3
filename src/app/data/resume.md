@@ -86,6 +86,13 @@ A short but focused engagement migrating online educational content between LMS 
 
 ## Projects
 
+### Security+ Trainer
+A study app Dwight built, and uses daily, to prepare for the CompTIA Security+ (SY0-701) exam. It walks learners through all 28 exam objectives as chapters, each with videos, a 5-question check, and up to three stars. It adds a review queue that brings missed questions back on later days, a 6-question random "Burst" quiz, 340 shuffled acronym flashcards, and a timed 90-question practice exam with drag-free matching questions. It installs to an iPhone Home Screen, and updates itself when a new version ships.
+
+The interesting engineering work was making progress reliable across devices. Every action is saved instantly to IndexedDB, then synced to Supabase as an append-only event log, so devices merge cleanly even after studying offline, with no conflicts to resolve. Row-level security keeps each account's data private. The 230 original practice questions went through blind independent review, and every deploy is gated by 120+ automated tests plus Playwright browser checks on phone and desktop, including color-contrast checks in light and dark mode.
+
+**Tech used:** React, TypeScript, Vite, Supabase (PostgreSQL, auth, row-level security), IndexedDB, Vitest, Playwright, Netlify.
+
 ### Resume AI Chatbot
 An AI assistant built directly into this portfolio site that lets recruiters and visitors ask questions about Dwight's background, experience, and skills and get instant answers grounded in his resume. Replies stream in real time, token by token, so the experience feels like a live conversation rather than a long wait followed by a wall of text.
 

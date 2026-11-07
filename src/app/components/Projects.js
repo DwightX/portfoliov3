@@ -38,6 +38,14 @@ const Projects = (props) => {
         <div className="exp-list">
 
           <Project
+            title="Security+ Trainer"
+            href="https://cert-study-path.netlify.app/"
+            githubHref="https://github.com/DwightX/sec-app"
+            description="A study app I built and use daily to prepare for the CompTIA Security+ exam. It guides learners through 28 chapters with videos, quick checks, a review queue that brings missed questions back on later days, shuffled flashcards, and a timed 90-question practice exam. Progress saves instantly offline and syncs across devices, and every deploy is gated by 120+ automated tests and full browser checks on phone and desktop."
+            stack="React · TypeScript · Vite · Supabase · PostgreSQL · IndexedDB · Vitest · Playwright · Netlify"
+          />
+
+          <Project
             title="Resume AI Chatbot"
             href="https://github.com/DwightX/portfoliov3"
             githubHref="https://github.com/DwightX/portfoliov3"
